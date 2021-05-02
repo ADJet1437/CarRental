@@ -1,0 +1,6 @@
+flask==1.1.2
+flask-sqlalchemy==2.5.1
+flask-script==2.0.6
+pymysql==1.0.2
+redis==3.5.3
+pytest==6.2.3
