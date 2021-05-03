@@ -105,6 +105,7 @@ def car_return():
     booking.return_date = now
     # update car availability
     car.available = True
+    car.mileage = mileage
     db.session.commit()
     # produce car to redis queue for next time to consume
     set_car(car.category, car.name, car.number)
