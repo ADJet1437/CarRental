@@ -91,7 +91,7 @@ Response of successful booking
     }
 }
 ```
-Pick the booking id `20210502191746-IJJS` and return the car with the following json parameter
+Pick the booking id `20210503050132-IISA` and return the car with the following json parameter
 ```json
 {
 	"booking_id": "20210503050132-IISA",
@@ -115,18 +115,11 @@ then will get the following response
 To cancel a booking, booking another car again with the same parameter:
 ```json
 {
-    "booking_id": "20210503050648-ICIC",
-    "category": "premium",
-    "customer": {
-        "birthday": "1994-06-17",
-        "name": "Jessica"
-    },
-    "name": "Volvo S9",
-    "nr": "BVE355",
-    "rental": {
-        "rental_days": 2,
-        "start_date": "2021-05-03"
-    }
+	"name": "Volvo S9",
+	"car_category": "premium",
+	"customer": "Jessica",
+	"birthday": "1994-06-17",
+	"rental_days": 2
 }
 ```
 and cancel it with the booking id
